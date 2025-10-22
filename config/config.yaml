@@ -1,0 +1,24 @@
+tracking:
+  default_tracker: CSRT
+  confidence_threshold: 0.5
+  max_tracking_history: 100
+
+yolo:
+  model_path: yolov8n.pt
+  device: cpu
+  conf_threshold: 0.5
+  iou_threshold: 0.45
+
+video:
+  default_fps: 30
+  output_format: mp4v
+  quality: high
+
+ui:
+  theme: light
+  show_trails: true
+  show_confidence: true
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
